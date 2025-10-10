@@ -2,6 +2,7 @@
 out/
 bin/
 lib/
+.cache/
 
 CMakeCache.txt
 CMakeFiles/
@@ -24,3 +25,5 @@ Thumbs.db
 *.tmp
 *.bak
 *.old
+
+millisat

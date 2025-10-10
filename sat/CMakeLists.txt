@@ -11,4 +11,4 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_executable(sat src/utils/CNFParser.cpp src/main.cpp)
+add_executable(millisat src/core/DPLLSolver.cpp src/utils/CNFParser.cpp src/main.cpp)
