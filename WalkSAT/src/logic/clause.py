@@ -59,5 +59,5 @@ class Clause:
 
         return "∨".join(
             f"{'¬' if index < 0 else ''}x{abs(index)}"
-            for index in self.literals    
+            for index in self.literals
         )
