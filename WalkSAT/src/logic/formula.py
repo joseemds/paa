@@ -1,4 +1,4 @@
-from typing import List, Optional, Dict
+from typing import List, Optional
 from clause import Clause
 from dataclasses import dataclass
 
