@@ -22,13 +22,21 @@ def main(solver_class):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run methods benchmarks.")
+
+    parser.add_argument(
+        "data",
+        nargs="?",
+        default="data/uf20-91",
+        help="Dataset to be used in tests"
+    )
     parser.add_argument(
         "solver",
         choices=SOLVERS.keys(),
         nargs="?",
         default="walksat",
         help="Solver to use (default: walksat)"
-    )
+    ) 
+
     args = parser.parse_args()
     
     solver_class = SOLVERS[args.solver.lower()]
