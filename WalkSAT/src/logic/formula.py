@@ -1,11 +1,11 @@
 from typing import List, Optional
-from clause import Clause
+from logic.clause import Clause
 from dataclasses import dataclass
 
-@dataclass
 class Formula:
-    num_variables: int
-    clauses: List[Clause] = []
+    def __init__(self, num_variables: int) -> None:
+        self.num_variables: int = num_variables
+        self.clauses: List[Clause] = []
 
     def add_clause(self, literals: List[int]) -> None:
         """Add a new clause to the formula."""
@@ -80,6 +80,10 @@ class Formula:
                 if line.startswith('c') or not line:
                     continue
 
+                # Reached end of file, nothing more to see.
+                if line.startswith('%'):
+                    break
+
                 # When the header is found, capture the number of variables and start a Formula object.
                 if line.startswith('p cnf'):
                     parts: List[str] = line.split()
@@ -94,15 +98,15 @@ class Formula:
                 # Get the line and transform in a list of integers.
                 literals: List[int] = list(map(int, line.split()))
 
+                # Remove the trailing 0.
+                if literals[-1] == 0:
+                    literals = literals[:-1]
+
                 if literals and not all(
                     1 <= abs(lit) <= formula.num_variables
                     for lit in literals
                 ):
                     raise ValueError(f"Error on {filename}:\nVariables out of bounds [1, {formula.num_variables}].")
-
-                # Remove the trailing 0.
-                if literals[-1] == 0:
-                    literals = literals[:-1]
 
                 # Add literals as a clause in the formula.
                 formula.add_clause(literals)
