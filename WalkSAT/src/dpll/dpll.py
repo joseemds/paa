@@ -1,12 +1,27 @@
 from typing import List, Optional
 from logic.formula import Formula
+from logic.clause import Clause
+from .heuristic import DecisionHeuristic, FirstUnassignedHeuristic, VsidsHeuristic
 
 class Dpll:
-    def __init__(self, formula: Formula):
+    def __init__(self, formula: Formula, heuristic: Optional[DecisionHeuristic] = None):
         self.formula = formula
         self.assigns: List[Optional[bool]] = [None] * (formula.num_variables + 1)
+        self.conflict_clause: Optional[Clause] = None
+
+        if heuristic is None:
+            self.heuristic = VsidsHeuristic()
+        else:
+            self.heuristic = heuristic
+        
+        self.heuristic.initialize(self.formula)
 
     def propagate(self) -> bool:
+        """
+        Performs unit propagation. Returns False if a conflict is found.
+        Stores the conflict clause when one is found.
+        """
+        self.conflict_clause = None
         changed = True
         while changed:
             changed = False
@@ -15,26 +30,35 @@ class Dpll:
                     continue
 
                 unassigned = [lit for lit in clause.literals if self.assigns[abs(lit)] is None]
+                
+                is_falsified = all(
+                    (lit > 0 and self.assigns[abs(lit)] is False) or 
+                    (lit < 0 and self.assigns[abs(lit)] is True)
+                    for lit in clause.literals if self.assigns[abs(lit)] is not None
+                )
 
-                if not unassigned:
+                if not unassigned and is_falsified:
+                    self.conflict_clause = clause
                     return False
 
                 if len(unassigned) == 1:
                     literal = unassigned[0]
                     var = abs(literal)
-                    value = literal > 0
-                    self.assigns[var] = value
-                    changed = True
+                    if self.assigns[var] is None:
+                        value = literal > 0
+                        self.assigns[var] = value
+                        changed = True
         return True
 
     def pick_unassigned(self) -> Optional[int]:
-        for i in range(1, self.formula.num_variables + 1):
-            if self.assigns[i] is None:
-                return i
-        return None
+        """
+        Delegates the choice of the next variable to the heuristic strategy.
+        """
+        return self.heuristic.pick_unassigned_variable(self.assigns)
 
     def dpll(self) -> bool:
         if not self.propagate():
+            self.heuristic.handle_conflict(self.conflict_clause)
             return False
 
         if all(a is not None for a in self.assigns[1:]):
@@ -51,11 +75,15 @@ class Dpll:
             return True
 
         self.assigns = saved_assigns.copy()
+        self.heuristic.handle_conflict(self.conflict_clause)
+
         self.assigns[var] = False
         if self.dpll():
             return True
 
         self.assigns = saved_assigns
+        self.heuristic.handle_conflict(self.conflict_clause)
+        
         return False
 
     def solve(self) -> bool:
