@@ -2,12 +2,14 @@ from typing import List, Optional
 from logic.formula import Formula
 from logic.clause import Clause
 from .heuristic import DecisionHeuristic, FirstUnassignedHeuristic, VsidsHeuristic
+import os
 
 class Dpll:
     def __init__(self, formula: Formula, heuristic: Optional[DecisionHeuristic] = None):
         self.formula = formula
         self.assigns: List[Optional[bool]] = [None] * (formula.num_variables + 1)
         self.conflict_clause: Optional[Clause] = None
+        self.seed = int.from_bytes(os.urandom(16), 'big')
 
         if heuristic is None:
             self.heuristic = VsidsHeuristic()

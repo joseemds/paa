@@ -3,6 +3,7 @@ from logic.formula import Formula
 
 from typing import List, Optional, Tuple
 import random
+import os
 
 class WalkSAT:
     """
@@ -25,6 +26,8 @@ class WalkSAT:
         self.formula = formula
         # Precompute occurrence lists for performance
         self.occurrence_lists = self._build_occurrence_lists()
+        self.seed = int.from_bytes(os.urandom(16), 'big')
+        random.seed(self.seed)
 
     def _build_occurrence_lists(self) -> List[List[int]]:
         """

@@ -55,6 +55,7 @@ class BenchmarkRunner:
 
         # Compile results
         result = {
+            'seed': solver.seed,
             'filename': cnf_file.name,
             'variables': instance.num_variables,
             'clauses': len(instance.clauses),
