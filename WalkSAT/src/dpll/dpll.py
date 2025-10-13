@@ -1,16 +1,12 @@
 from typing import List, Optional
 from logic.formula import Formula
 
-class DPLL:
+class Dpll:
     def __init__(self, formula: Formula):
         self.formula = formula
         self.assigns: List[Optional[bool]] = [None] * (formula.num_variables + 1)
 
     def propagate(self) -> bool:
-        """
-        Perform unit propagation.
-        Return False if a conflict is found, True otherwise.
-        """
         changed = True
         while changed:
             changed = False
@@ -48,16 +44,30 @@ class DPLL:
         if var is None:
             return self.formula.is_satisfied(self.assigns)
 
+        saved_assigns = self.assigns.copy()
+
         self.assigns[var] = True
         if self.dpll():
             return True
 
+        self.assigns = saved_assigns.copy()
         self.assigns[var] = False
         if self.dpll():
             return True
 
-        self.assigns[var] = None
+        self.assigns = saved_assigns
         return False
 
     def solve(self) -> bool:
         return self.dpll()
+
+    def solve_with_stats(self, *args, **kwargs) -> dict:
+        result = self.solve()
+        stats = {
+            'solution_found': result,
+            'assignment': self.assigns if result else None,
+            'restarts_used': -1,
+            'flips_used': 0,
+            'final_satisfied': -1
+        }
+        return stats
