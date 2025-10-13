@@ -27,3 +27,5 @@ Thumbs.db
 *.old
 
 millisat
+
+__pycache__/
