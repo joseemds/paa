@@ -7,6 +7,7 @@ from datetime import datetime
 
 from logic.formula import Formula
 from walksat.walksat import WalkSAT
+from dpll.dpll import Dpll
 
 
 class BenchmarkRunner:
@@ -19,10 +20,11 @@ class BenchmarkRunner:
     Saves all results in a file.
     """
 
-    def __init__(self, data_dir: str = "data/uf20-91", results_dir: str = "results"):
+    def __init__(self, solver = WalkSAT, data_dir: str = "data/uf20-91", results_dir: str = "results"):
         self.data_dir = Path(data_dir)
         self.results_dir = Path(results_dir)
         self.results_dir.mkdir(exist_ok=True)
+        self.solver = solver
 
     def find_cnf_files(self) -> List[Path]:
         """Find all .cnf files in the data directory."""
@@ -41,7 +43,7 @@ class BenchmarkRunner:
         load_time = time.time() - start_load
 
         # Solve with WalkSAT
-        solver = WalkSAT(instance)
+        solver = self.solver(instance)
 
         start_solve = time.time()
         stats = solver.solve_with_stats(
@@ -139,7 +141,8 @@ class BenchmarkRunner:
         """Save results to file."""
 
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = self.results_dir / f"benchmark_results_{timestamp}.{format}"
+        solver_name = self.solver.__name__.lower()
+        filename = self.results_dir / f"benchmark_{solver_name}_results_{timestamp}.{format}"
 
         if format == "json":
             with open(filename, 'w') as f:

@@ -66,8 +66,8 @@ class Dpll:
         stats = {
             'solution_found': result,
             'assignment': self.assigns if result else None,
-            'restarts_used': -1,
+            'restarts_used': 0,
             'flips_used': 0,
-            'final_satisfied': -1
+            'final_satisfied': int(result)
         }
         return stats
