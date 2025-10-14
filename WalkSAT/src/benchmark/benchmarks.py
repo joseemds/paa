@@ -32,7 +32,7 @@ class BenchmarkRunner:
         return list(self.data_dir.glob("*.cnf"))
 
     def run_benchmark(self, cnf_file: Path, max_flips: int = 10000,
-                     max_restarts: int = 100, noise_prob: float = 0.57) -> Dict[str, Any]:
+max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -> Dict[str, Any]:
         """Run WalkSAT on a single CNF file and return metrics."""
 
         print(f"Benchmarking: {cnf_file.name}")
@@ -43,7 +43,7 @@ class BenchmarkRunner:
         load_time = time.time() - start_load
 
         # Solve with WalkSAT
-        solver = self.solver(instance)
+        solver = self.solver(instance, seed=seed)
 
         start_solve = time.time()
         stats = solver.solve_with_stats(
@@ -76,7 +76,7 @@ class BenchmarkRunner:
 
         return result
 
-    def run_all_benchmarks(self, max_files: Optional[int] = None, **solver_kwargs) -> Dict[str, Any]:
+    def run_all_benchmarks(self, max_files: Optional[int] = None, seed: Optional[int] = None, **solver_kwargs) -> Dict[str, Any]:
         """Run benchmarks on all CNF files"""
 
         cnf_files = self.find_cnf_files()
@@ -88,7 +88,7 @@ class BenchmarkRunner:
         results = []
         for cnf_file in cnf_files:
             try:
-                result = self.run_benchmark(cnf_file, **solver_kwargs)
+                result = self.run_benchmark(cnf_file, **solver_kwargs, seed=seed)
                 results.append(result)
             except Exception as e:
                 print(f"Error processing {cnf_file.name}: {e}")

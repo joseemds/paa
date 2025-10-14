@@ -5,11 +5,11 @@ from .heuristic import DecisionHeuristic, FirstUnassignedHeuristic, VsidsHeurist
 import os
 
 class Dpll:
-    def __init__(self, formula: Formula, heuristic: Optional[DecisionHeuristic] = None):
+    def __init__(self, formula: Formula, heuristic: Optional[DecisionHeuristic] = None, seed = None):
         self.formula = formula
         self.assigns: List[Optional[bool]] = [None] * (formula.num_variables + 1)
         self.conflict_clause: Optional[Clause] = None
-        self.seed = int.from_bytes(os.urandom(16), 'big')
+        self.seed = seed or int.from_bytes(os.urandom(16), 'big')
 
         if heuristic is None:
             self.heuristic = VsidsHeuristic()

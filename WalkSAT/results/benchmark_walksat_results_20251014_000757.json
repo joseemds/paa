@@ -1,0 +1,17 @@
+[
+  {
+    "seed": 236817222437603539213015874611239306196,
+    "filename": "uf20-0780.cnf",
+    "variables": 20,
+    "clauses": 91,
+    "solution_found": true,
+    "restarts_used": 1,
+    "flips_used": 73,
+    "final_satisfied": 91,
+    "load_time_seconds": 0.0002,
+    "solve_time_seconds": 0.002,
+    "total_time_seconds": 0.0022,
+    "flips_per_second": 35665.02,
+    "timestamp": "2025-10-14T00:07:57.982684"
+  }
+]
