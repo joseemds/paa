@@ -40,12 +40,13 @@ for item in data:
 latex = (
     "\\begin{table}[h!]\n"
     "\\centering\n"
+    "\\resizebox{\\textwidth}{!}{%\n"
     "\\begin{tabular}{|" + "c|" * len(columns) + "}\n"
     "\\hline\n"
     + header
     + rows
     + "\\hline\n"
-    "\\end{tabular}\n"
+    "\\end{tabular}}\n"
     "\\caption{SAT solver results}\n"
     "\\label{tab:sat-results}\n"
     "\\end{table}"
