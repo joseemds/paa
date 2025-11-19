@@ -15,47 +15,40 @@ class Dpll:
             self.heuristic = VsidsHeuristic()
         else:
             self.heuristic = heuristic
-        
+
         self.heuristic.initialize(self.formula)
 
     def propagate(self) -> bool:
-        """
-        Performs unit propagation. Returns False if a conflict is found.
-        Stores the conflict clause when one is found.
-        """
         self.conflict_clause = None
         changed = True
         while changed:
             changed = False
             for clause in self.formula.clauses:
-                if clause.is_satisfied(self.assigns):
+                satisfied = False
+                unassigned_literals = []
+                for lit in clause.literals:
+                    val = self.assigns[abs(lit)]
+                    if val is None:
+                        unassigned_literals.append(lit)
+                    else:
+                        if (lit > 0 and val is True) or (lit < 0 and val is False):
+                            satisfied = True
+                            break
+                if satisfied:
                     continue
-
-                unassigned = [lit for lit in clause.literals if self.assigns[abs(lit)] is None]
-                
-                is_falsified = all(
-                    (lit > 0 and self.assigns[abs(lit)] is False) or 
-                    (lit < 0 and self.assigns[abs(lit)] is True)
-                    for lit in clause.literals if self.assigns[abs(lit)] is not None
-                )
-
-                if not unassigned and is_falsified:
+                if not unassigned_literals:
                     self.conflict_clause = clause
                     return False
-
-                if len(unassigned) == 1:
-                    literal = unassigned[0]
+                if len(unassigned_literals) == 1:
+                    literal = unassigned_literals[0]
                     var = abs(literal)
+                    value = literal > 0
                     if self.assigns[var] is None:
-                        value = literal > 0
                         self.assigns[var] = value
                         changed = True
         return True
 
     def pick_unassigned(self) -> Optional[int]:
-        """
-        Delegates the choice of the next variable to the heuristic strategy.
-        """
         return self.heuristic.pick_unassigned_variable(self.assigns)
 
     def dpll(self) -> bool:
@@ -85,7 +78,7 @@ class Dpll:
 
         self.assigns = saved_assigns
         self.heuristic.handle_conflict(self.conflict_clause)
-        
+
         return False
 
     def solve(self) -> bool:
