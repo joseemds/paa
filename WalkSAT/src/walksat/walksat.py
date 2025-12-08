@@ -27,6 +27,7 @@ class WalkSAT:
         # Precompute occurrence lists for performance
         self.occurrence_lists = self._build_occurrence_lists()
         self.seed = seed or int.from_bytes(os.urandom(16), 'big')
+        self.stats = {}
         random.seed(self.seed)
 
     def _build_occurrence_lists(self) -> List[List[int]]:
@@ -190,4 +191,5 @@ class WalkSAT:
             stats['restarts_used'] = restart + 1
 
         stats['final_satisfied'] = self.formula.count_satisfied(assignment)
+        self.stats = stats
         return stats

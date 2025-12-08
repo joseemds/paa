@@ -31,8 +31,7 @@ class BenchmarkRunner:
 
         return list(self.data_dir.glob("*.cnf"))
 
-    def run_benchmark(self, cnf_file: Path, max_flips: int = 10000,
-max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -> Dict[str, Any]:
+    def run_benchmark(self, cnf_file: Path, seed: Optional[int] = None, **kwargs) -> Dict[str, Any]:
         """Run WalkSAT on a single CNF file and return metrics."""
 
         print(f"Benchmarking: {cnf_file.name}")
@@ -46,11 +45,7 @@ max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -
         solver = self.solver(instance, seed=seed)
 
         start_solve = time.time()
-        stats = solver.solve_with_stats(
-            max_flips=max_flips,
-            max_restarts=max_restarts,
-            noise_prob=noise_prob
-        )
+        stats = solver.solve_with_stats(**kwargs)
         solve_time = time.time() - start_solve
 
         # Compile results
@@ -60,19 +55,16 @@ max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -
             'variables': instance.num_variables,
             'clauses': len(instance.clauses),
             'solution_found': stats['solution_found'],
-            'restarts_used': stats['restarts_used'],
-            'flips_used': stats['flips_used'],
-            'final_satisfied': stats['final_satisfied'],
             'load_time_seconds': round(load_time, 4),
             'solve_time_seconds': round(solve_time, 4),
             'total_time_seconds': round(load_time + solve_time, 4),
-            'flips_per_second': round(stats['flips_used'] / solve_time, 2) if solve_time > 0 else 0,
+            'solver_params': kwargs,
+            'solver_stats': stats,
             'timestamp': datetime.now().isoformat()
         }
 
         print(f"  Result: {'SOLVED' if result['solution_found'] else 'UNSOLVED'} "
-              f"in {result['solve_time_seconds']}s "
-              f"({result['flips_used']} flips)")
+              f"in {result['solve_time_seconds']}s ")
 
         return result
 
@@ -116,11 +108,13 @@ max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -
     def _compute_summary(self, results: List[Dict[str, Any]]) -> Dict[str, Any]:
         """Compute aggregate statistics from individual results."""
 
-        solved = [r for r in results if r['solution_found']]
-        unsolved = [r for r in results if not r['solution_found']]
+        solved = [r for r in results if r['solver_stats']['solution_found']]
+        unsolved = [r for r in results if not r['solver_stats']['solution_found']]
+        total_time = sum(r['total_time_seconds'] for r in results)
 
         return {
             'total_instances': len(results),
+            'total_time': total_time,
             'solved_count': len(solved),
             'unsolved_count': len(unsolved),
             'success_rate': len(solved) / len(results) if results else 0,
@@ -128,14 +122,11 @@ max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -
             # Time statistics (only for solved instances)
             'avg_solve_time_solved': statistics.mean([r['solve_time_seconds'] for r in solved]) if solved else 0,
             'median_solve_time_solved': statistics.median([r['solve_time_seconds'] for r in solved]) if solved else 0,
-            'avg_flips_solved': statistics.mean([r['flips_used'] for r in solved]) if solved else 0,
-            'avg_restarts_solved': statistics.mean([r['restarts_used'] for r in solved]) if solved else 0,
 
-            # Performance metrics
-            'avg_flips_per_second': statistics.mean([r['flips_per_second'] for r in results]) if results else 0,
-
-            # For unsolved instances
-            'avg_final_satisfied_unsolved': statistics.mean([r['final_satisfied'] for r in unsolved]) if unsolved else 0,
+            #Time statistics for unsolved
+            'avg_solve_time_unsolved': statistics.mean([r['solve_time_seconds'] for r in unsolved]) if unsolved else 0,
+            'median_solve_time_unsolved': statistics.median([r['solve_time_seconds'] for r in unsolved]) if unsolved else 0,
+            'avg_final_satisfied_unsolved': statistics.mean([r['solver_stats']['final_satisfied'] for r in unsolved]) if unsolved else 0,
         }
 
     def _save_results(self, output: Dict[str, Any], format: str = "json"):
@@ -163,9 +154,8 @@ max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -
             # Header
             writer.writerow([
                 'filename', 'variables', 'clauses', 'solution_found',
-                'restarts_used', 'flips_used', 'final_satisfied',
-                'load_time_seconds', 'solve_time_seconds', 'total_time_seconds',
-                'flips_per_second', 'timestamp'
+                'final_satisfied', 'load_time_seconds', 
+                'solve_time_seconds', 'total_time_seconds',  'timestamp'
             ])
             # Data
             for result in output['individual_results']:
@@ -174,28 +164,25 @@ max_restarts: int = 100, noise_prob: float = 0.57, seed: Optional[int] = None) -
                     result['variables'],
                     result['clauses'],
                     result['solution_found'],
-                    result['restarts_used'],
-                    result['flips_used'],
                     result['final_satisfied'],
                     result['load_time_seconds'],
                     result['solve_time_seconds'],
                     result['total_time_seconds'],
-                    result['flips_per_second'],
                     result['timestamp']
                 ])
 
     def _print_summary(self, summary: Dict[str, Any]):
         """Print a nice summary to console."""
 
+        print(summary)
         print("\n" + "="*50)
         print("BENCHMARK SUMMARY")
         print("="*50)
+        print(f"Solver: {self.solver.__class__.__name__}")
         print(f"Total instances: {summary['total_instances']}")
+        print(f"Total time: {summary['total_time']}s")
         print(f"Solved: {summary['solved_count']} / {summary['total_instances']}")
         print(f"Success rate: {summary['success_rate']:.1%}")
-        print(f"Average solve time (solved): {summary['avg_solve_time_solved']:.3f}s")
-        print(f"Average flips (solved): {summary['avg_flips_solved']:.0f}")
-        print(f"Average restarts (solved): {summary['avg_restarts_solved']:.1f}")
-        print(f"Average flips/second: {summary['avg_flips_per_second']:.0f}")
+        print(f"Average solve time (solved): {summary['avg_solve_time_solved']:.4f}s")
         if summary['unsolved_count'] > 0:
             print(f"Avg satisfied clauses (unsolved): {summary['avg_final_satisfied_unsolved']:.1f}")

@@ -3,11 +3,13 @@ import os
 from benchmark.benchmarks import BenchmarkRunner
 from walksat.walksat import WalkSAT
 from dpll.dpll import Dpll
+from ils.ils import IteratedLocalSearch
 from pathlib import Path
 
 SOLVERS = {
     "walksat": WalkSAT,
-    "dpll": Dpll
+    "dpll": Dpll,
+    "ils": IteratedLocalSearch
 }
 
 def main(solver_class, data_path, seed=None):

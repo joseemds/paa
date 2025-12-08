@@ -9,6 +9,7 @@ class Dpll:
         self.formula = formula
         self.assigns: List[Optional[bool]] = [None] * (formula.num_variables + 1)
         self.conflict_clause: Optional[Clause] = None
+        self.stats = {}
         self.seed = seed or int.from_bytes(os.urandom(16), 'big')
 
         if heuristic is None:
@@ -89,8 +90,7 @@ class Dpll:
         stats = {
             'solution_found': result,
             'assignment': self.assigns if result else None,
-            'restarts_used': 0,
-            'flips_used': 0,
             'final_satisfied': int(result)
         }
+        self.stats = stats
         return stats

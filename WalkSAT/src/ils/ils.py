@@ -175,7 +175,7 @@ class IteratedLocalSearch:
     def solve(self,
               max_iterations: int = 100,
               local_search_flips: int = 1000,
-              perturbation_strength: float = 0.1) -> Tuple[List[Optional[bool]], int]:
+              perturbation_strength: float = 0.1) -> Tuple[List[Optional[bool]], int, int]:
         """
         Solve MAX-SAT using Iterated Local Search
 
@@ -193,6 +193,7 @@ class IteratedLocalSearch:
         current_solution, current_fitness = self._local_search(current_solution, local_search_flips)
         best_solution = current_solution.copy()
         best_fitness = current_fitness
+        best_iteration = 1
 
         print(f"Initial solution: {best_fitness}/{len(self.formula.clauses)} clauses satisfied")
 
@@ -214,6 +215,7 @@ class IteratedLocalSearch:
                 if candidate_fitness > best_fitness:
                     best_solution = candidate_solution.copy()
                     best_fitness = candidate_fitness
+                    best_iteration = iteration
                     print(f"Iteration {iteration}: New best fitness = {best_fitness}")
 
             # Early termination if optimal solution found
@@ -222,4 +224,14 @@ class IteratedLocalSearch:
                 break
 
         print(f"Final solution: {best_fitness}/{len(self.formula.clauses)} clauses satisfied")
-        return best_solution, best_fitness
+        return best_solution, best_fitness, best_iteration
+
+    def solve_with_stats(self, *args, **kwargs) -> dict:
+      assignment, fitness, best_iteration = self.solve()
+      return {
+       'solution_found': (fitness == len(self.formula.clauses)),
+       'assignment': assignment,
+       'final_satisfied': fitness,
+       'best_iteration': best_iteration
+      }
+

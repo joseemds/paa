@@ -13,15 +13,16 @@ parser.add_argument("input_file")
 
 fields = [
     ("total_instances", "Total Instances"),
-    ("solved_count", "Solved"),
-    ("unsolved_count", "Unsolved"),
-    ("success_rate", "Success Rate"),
-    ("avg_solve_time_solved", "Avg Solve Time (s)"),
-    ("median_solve_time_solved", "Median Solve Time (s)"),
-    ("avg_flips_solved", "Avg Flips"),
-    ("avg_restarts_solved", "Avg Restarts"),
-    ("avg_flips_per_second", "Flips/sec"),
-    ("avg_final_satisfied_unsolved", "Avg Final Sat (unsolved)"),
+    ("total_time", "Total Time"),
+    # ("unsolved_count", "Unsolved"),
+    # ("success_rate", "Success Rate"),
+    ("avg_unsolve_time_solved", "Avg Solve Time (s)"),
+    ("median_unsolve_time_solved", "Median Solve Time (s)"),
+    ('avg_final_satisfied_unsolved', 'Avg Satisfied Clauses')
+    # ("avg_flips_solved", "Avg Flips"),
+    # ("avg_restarts_solved", "Avg Restarts"),
+    # ("avg_flips_per_second", "Flips/sec"),
+    # ("avg_final_satisfied_unsolved", "Avg Final Sat (unsolved)"),
 ]
 
 label = "Local Search"
