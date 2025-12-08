@@ -1,0 +1,17 @@
+[
+  {
+    "seed": 296344788044462732327256485144343959316,
+    "filename": "flat30-1.cnf",
+    "variables": 90,
+    "clauses": 300,
+    "solution_found": true,
+    "restarts_used": 1,
+    "flips_used": 1431,
+    "final_satisfied": 300,
+    "load_time_seconds": 0.0005,
+    "solve_time_seconds": 0.0877,
+    "total_time_seconds": 0.0882,
+    "flips_per_second": 16319.45,
+    "timestamp": "2025-10-13T23:59:25.847315"
+  }
+]

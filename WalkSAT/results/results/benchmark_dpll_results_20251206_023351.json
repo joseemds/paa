@@ -1,0 +1,2123 @@
+{
+  "summary": {
+    "total_instances": 100,
+    "total_time": 8.4841,
+    "solved_count": 0,
+    "unsolved_count": 100,
+    "success_rate": 0.0,
+    "avg_solve_time_solved": 0,
+    "median_solve_time_solved": 0,
+    "avg_final_satisfied_unsolved": 0
+  },
+  "individual_results": [
+    {
+      "seed": 39827579090444956256622793151693936954,
+      "filename": "uuf75-086.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0007,
+      "solve_time_seconds": 0.0866,
+      "total_time_seconds": 0.0873,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:42.981406"
+    },
+    {
+      "seed": 222114815723900576734707414848924040150,
+      "filename": "uuf75-057.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.1411,
+      "total_time_seconds": 0.1416,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.123230"
+    },
+    {
+      "seed": 68196188850239283545884830953282479306,
+      "filename": "uuf75-055.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0601,
+      "total_time_seconds": 0.0607,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.184038"
+    },
+    {
+      "seed": 331869481481416731671919353915302726935,
+      "filename": "uuf75-056.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0763,
+      "total_time_seconds": 0.0768,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.260985"
+    },
+    {
+      "seed": 217466384903306931118085003869034906041,
+      "filename": "uuf75-071.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0007,
+      "solve_time_seconds": 0.1036,
+      "total_time_seconds": 0.1043,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.365449"
+    },
+    {
+      "seed": 329365730995738448809179962637709675090,
+      "filename": "uuf75-083.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.091,
+      "total_time_seconds": 0.0915,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.457137"
+    },
+    {
+      "seed": 332222765245484186731888217881217732202,
+      "filename": "uuf75-092.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0664,
+      "total_time_seconds": 0.067,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.524251"
+    },
+    {
+      "seed": 58252998798000412712085727400025046510,
+      "filename": "uuf75-07.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0605,
+      "total_time_seconds": 0.0611,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.585467"
+    },
+    {
+      "seed": 299036581910633887161663967614793585650,
+      "filename": "uuf75-01.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0621,
+      "total_time_seconds": 0.0626,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.648238"
+    },
+    {
+      "seed": 58340337537223806526339275361209854556,
+      "filename": "uuf75-053.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0947,
+      "total_time_seconds": 0.0953,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.743674"
+    },
+    {
+      "seed": 124852421570304941790419166678234027349,
+      "filename": "uuf75-032.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.069,
+      "total_time_seconds": 0.0696,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.813407"
+    },
+    {
+      "seed": 150990748857662727392655288836315356145,
+      "filename": "uuf75-024.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.071,
+      "total_time_seconds": 0.0715,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.885107"
+    },
+    {
+      "seed": 85426670030593842844174812801063124576,
+      "filename": "uuf75-05.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.1074,
+      "total_time_seconds": 0.108,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:43.993258"
+    },
+    {
+      "seed": 107882088710551885704518500184067911202,
+      "filename": "uuf75-097.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0753,
+      "total_time_seconds": 0.0758,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.069223"
+    },
+    {
+      "seed": 36065639584801545698911246057370427202,
+      "filename": "uuf75-065.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1176,
+      "total_time_seconds": 0.1181,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.187480"
+    },
+    {
+      "seed": 311981953561696855194701460193040078797,
+      "filename": "uuf75-039.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1146,
+      "total_time_seconds": 0.1151,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.302748"
+    },
+    {
+      "seed": 71059129014359454910305213718814728558,
+      "filename": "uuf75-058.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0007,
+      "solve_time_seconds": 0.0538,
+      "total_time_seconds": 0.0546,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.357483"
+    },
+    {
+      "seed": 244382471295698443637942850674480762394,
+      "filename": "uuf75-020.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1277,
+      "total_time_seconds": 0.1282,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.485851"
+    },
+    {
+      "seed": 24210871372167903597684396038972918391,
+      "filename": "uuf75-013.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0929,
+      "total_time_seconds": 0.0935,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.579516"
+    },
+    {
+      "seed": 71408133451008012623421803682669490818,
+      "filename": "uuf75-076.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0585,
+      "total_time_seconds": 0.0591,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.638756"
+    },
+    {
+      "seed": 209580845028055046849672269329027520848,
+      "filename": "uuf75-050.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1093,
+      "total_time_seconds": 0.1099,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.748812"
+    },
+    {
+      "seed": 111988376108625820541074392190831063912,
+      "filename": "uuf75-060.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0794,
+      "total_time_seconds": 0.0799,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.828923"
+    },
+    {
+      "seed": 105756567909356502841629523890098316007,
+      "filename": "uuf75-079.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0902,
+      "total_time_seconds": 0.0908,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:44.919871"
+    },
+    {
+      "seed": 105038814486279022909778879950764710880,
+      "filename": "uuf75-095.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1134,
+      "total_time_seconds": 0.1139,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.033978"
+    },
+    {
+      "seed": 143094157268758918519982700195683926852,
+      "filename": "uuf75-047.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.1186,
+      "total_time_seconds": 0.1191,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.153274"
+    },
+    {
+      "seed": 282951416849072664363230872601119213584,
+      "filename": "uuf75-029.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.187,
+      "total_time_seconds": 0.1875,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.340949"
+    },
+    {
+      "seed": 23392385084423403801028932689951981616,
+      "filename": "uuf75-038.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1055,
+      "total_time_seconds": 0.1061,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.447181"
+    },
+    {
+      "seed": 4344946324493788871048125335908987468,
+      "filename": "uuf75-02.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0474,
+      "total_time_seconds": 0.048,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.495305"
+    },
+    {
+      "seed": 30703041993631912611736415453067040811,
+      "filename": "uuf75-061.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.1143,
+      "total_time_seconds": 0.1149,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.610321"
+    },
+    {
+      "seed": 90416310586561858288631363517246917163,
+      "filename": "uuf75-096.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0838,
+      "total_time_seconds": 0.0844,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.694862"
+    },
+    {
+      "seed": 98627587995824605725937923119311030088,
+      "filename": "uuf75-019.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.082,
+      "total_time_seconds": 0.0825,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.777567"
+    },
+    {
+      "seed": 314559369303330854918514574118276226386,
+      "filename": "uuf75-091.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0674,
+      "total_time_seconds": 0.068,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.845697"
+    },
+    {
+      "seed": 166108571344866673062644106531868076383,
+      "filename": "uuf75-015.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0609,
+      "total_time_seconds": 0.0614,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:45.907275"
+    },
+    {
+      "seed": 228909227822200170044716755134765741480,
+      "filename": "uuf75-069.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0938,
+      "total_time_seconds": 0.0943,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.001771"
+    },
+    {
+      "seed": 132209388508803984580587269226453775282,
+      "filename": "uuf75-090.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0414,
+      "total_time_seconds": 0.042,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.043876"
+    },
+    {
+      "seed": 80522347824285992485213799010132391798,
+      "filename": "uuf75-052.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0559,
+      "total_time_seconds": 0.0564,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.100419"
+    },
+    {
+      "seed": 245283471971395386272672633292795574261,
+      "filename": "uuf75-0100.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0889,
+      "total_time_seconds": 0.0894,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.189952"
+    },
+    {
+      "seed": 155574980448681817522043205557108139480,
+      "filename": "uuf75-016.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1079,
+      "total_time_seconds": 0.1084,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.298550"
+    },
+    {
+      "seed": 329154114441043124084393707803690403660,
+      "filename": "uuf75-064.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0564,
+      "total_time_seconds": 0.0569,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.355638"
+    },
+    {
+      "seed": 91505895835884624240081039716753181543,
+      "filename": "uuf75-084.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1249,
+      "total_time_seconds": 0.1254,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.481159"
+    },
+    {
+      "seed": 24397915644944834513848317091196272121,
+      "filename": "uuf75-059.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1311,
+      "total_time_seconds": 0.1316,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.612941"
+    },
+    {
+      "seed": 7262269023772533246501650933059349821,
+      "filename": "uuf75-018.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0458,
+      "total_time_seconds": 0.0463,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.659444"
+    },
+    {
+      "seed": 135397442472261999340828057940112262979,
+      "filename": "uuf75-040.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0565,
+      "total_time_seconds": 0.057,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.716627"
+    },
+    {
+      "seed": 174421831688141035101171704592271376483,
+      "filename": "uuf75-014.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1318,
+      "total_time_seconds": 0.1324,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.849137"
+    },
+    {
+      "seed": 84437738328700238277338498880718727510,
+      "filename": "uuf75-070.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0905,
+      "total_time_seconds": 0.091,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:46.940331"
+    },
+    {
+      "seed": 98309760266900686918367488422996808079,
+      "filename": "uuf75-036.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0878,
+      "total_time_seconds": 0.0883,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.028749"
+    },
+    {
+      "seed": 176100904510076516437159822753606939408,
+      "filename": "uuf75-022.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0874,
+      "total_time_seconds": 0.0879,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.116830"
+    },
+    {
+      "seed": 160723553563884239744788945328084434842,
+      "filename": "uuf75-06.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.081,
+      "total_time_seconds": 0.0815,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.198546"
+    },
+    {
+      "seed": 129871821032120164972487166584050281893,
+      "filename": "uuf75-037.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0503,
+      "total_time_seconds": 0.0508,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.249525"
+    },
+    {
+      "seed": 78046048482781423963270717714492283084,
+      "filename": "uuf75-063.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0677,
+      "total_time_seconds": 0.0682,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.317877"
+    },
+    {
+      "seed": 63716829502861007828145954324917436369,
+      "filename": "uuf75-026.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0537,
+      "total_time_seconds": 0.0542,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.372265"
+    },
+    {
+      "seed": 298928400056556535514054911498688672363,
+      "filename": "uuf75-078.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0558,
+      "total_time_seconds": 0.0563,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.428739"
+    },
+    {
+      "seed": 262818761851901260654933341888956505510,
+      "filename": "uuf75-077.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0887,
+      "total_time_seconds": 0.0892,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.518116"
+    },
+    {
+      "seed": 87088482115934143996388562774290435980,
+      "filename": "uuf75-017.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1101,
+      "total_time_seconds": 0.1106,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.628898"
+    },
+    {
+      "seed": 209909957390152547705784024716852691862,
+      "filename": "uuf75-043.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0592,
+      "total_time_seconds": 0.0598,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.688814"
+    },
+    {
+      "seed": 40301824383750728783486817641834677142,
+      "filename": "uuf75-08.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1002,
+      "total_time_seconds": 0.1007,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.789691"
+    },
+    {
+      "seed": 90160219842078557377698638977146633914,
+      "filename": "uuf75-093.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0455,
+      "total_time_seconds": 0.046,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.835856"
+    },
+    {
+      "seed": 40027470453223402777156177218402088075,
+      "filename": "uuf75-030.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0637,
+      "total_time_seconds": 0.0642,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:47.900191"
+    },
+    {
+      "seed": 97166213923389673220820827405765361575,
+      "filename": "uuf75-048.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1195,
+      "total_time_seconds": 0.1201,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.020408"
+    },
+    {
+      "seed": 244962434158415487165257551882830356731,
+      "filename": "uuf75-042.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.134,
+      "total_time_seconds": 0.1346,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.155123"
+    },
+    {
+      "seed": 216999413092789356333667005071859837542,
+      "filename": "uuf75-028.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0902,
+      "total_time_seconds": 0.0908,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.246049"
+    },
+    {
+      "seed": 23888546062492115459404440838131819676,
+      "filename": "uuf75-027.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0726,
+      "total_time_seconds": 0.0731,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.319311"
+    },
+    {
+      "seed": 204836232467470355542859636236008442161,
+      "filename": "uuf75-098.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0355,
+      "total_time_seconds": 0.0361,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.355544"
+    },
+    {
+      "seed": 307462259468167388442295247619200720177,
+      "filename": "uuf75-067.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.095,
+      "total_time_seconds": 0.0956,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.451259"
+    },
+    {
+      "seed": 244276731581261377044898858416752389388,
+      "filename": "uuf75-041.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1309,
+      "total_time_seconds": 0.1314,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.582815"
+    },
+    {
+      "seed": 31468030860515716425922669938270411351,
+      "filename": "uuf75-011.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0385,
+      "total_time_seconds": 0.039,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.622005"
+    },
+    {
+      "seed": 111348406627119197443725679994272181721,
+      "filename": "uuf75-073.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0986,
+      "total_time_seconds": 0.0991,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.721253"
+    },
+    {
+      "seed": 155947028620622691799343940433644624832,
+      "filename": "uuf75-051.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0575,
+      "total_time_seconds": 0.0581,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.779530"
+    },
+    {
+      "seed": 331879940981844371492387054807364290703,
+      "filename": "uuf75-012.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1011,
+      "total_time_seconds": 0.1017,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.881341"
+    },
+    {
+      "seed": 333530122672277324439459395904732742027,
+      "filename": "uuf75-088.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.055,
+      "total_time_seconds": 0.0555,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:48.937005"
+    },
+    {
+      "seed": 14027160042702713061117460733138605375,
+      "filename": "uuf75-044.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.1001,
+      "total_time_seconds": 0.1006,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.037773"
+    },
+    {
+      "seed": 253280626197096848773973642140769010569,
+      "filename": "uuf75-046.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0829,
+      "total_time_seconds": 0.0834,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.121379"
+    },
+    {
+      "seed": 204988306001355013931605552651788042043,
+      "filename": "uuf75-094.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0756,
+      "total_time_seconds": 0.0761,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.197639"
+    },
+    {
+      "seed": 124208595089370890871421479170162491157,
+      "filename": "uuf75-099.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.056,
+      "total_time_seconds": 0.0565,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.254314"
+    },
+    {
+      "seed": 55884932572927868332655358601399312944,
+      "filename": "uuf75-034.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0938,
+      "total_time_seconds": 0.0944,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.348866"
+    },
+    {
+      "seed": 65507193186297186195047726350339690949,
+      "filename": "uuf75-062.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0734,
+      "total_time_seconds": 0.0739,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.422986"
+    },
+    {
+      "seed": 39322017592853025874809411045198272178,
+      "filename": "uuf75-03.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0969,
+      "total_time_seconds": 0.0974,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.520575"
+    },
+    {
+      "seed": 203959710570945491777174995746306598990,
+      "filename": "uuf75-081.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1025,
+      "total_time_seconds": 0.103,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.623766"
+    },
+    {
+      "seed": 71057564905246698105386821572472605889,
+      "filename": "uuf75-045.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0653,
+      "total_time_seconds": 0.0658,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.689751"
+    },
+    {
+      "seed": 117055154824266597440870281389736981585,
+      "filename": "uuf75-023.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1063,
+      "total_time_seconds": 0.1068,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.796713"
+    },
+    {
+      "seed": 160002825654763075712846634439333175196,
+      "filename": "uuf75-068.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1042,
+      "total_time_seconds": 0.1047,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.901588"
+    },
+    {
+      "seed": 156348428892172177425768875553886956231,
+      "filename": "uuf75-033.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0589,
+      "total_time_seconds": 0.0594,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:49.961181"
+    },
+    {
+      "seed": 126061816806156351828153000726641314111,
+      "filename": "uuf75-082.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0614,
+      "total_time_seconds": 0.0619,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.023243"
+    },
+    {
+      "seed": 37345624002070589520114330187476663526,
+      "filename": "uuf75-031.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0705,
+      "total_time_seconds": 0.071,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.094420"
+    },
+    {
+      "seed": 290887230052091784204550681181081191799,
+      "filename": "uuf75-080.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0597,
+      "total_time_seconds": 0.0602,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.154786"
+    },
+    {
+      "seed": 60596501106572633466739875949435610104,
+      "filename": "uuf75-09.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0329,
+      "total_time_seconds": 0.0334,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.188311"
+    },
+    {
+      "seed": 310050786337981109756378911817064856349,
+      "filename": "uuf75-074.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0931,
+      "total_time_seconds": 0.0936,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.282055"
+    },
+    {
+      "seed": 155537223590459480008519990795047612647,
+      "filename": "uuf75-025.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0887,
+      "total_time_seconds": 0.0892,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.371451"
+    },
+    {
+      "seed": 187318716846496960826322205845410310036,
+      "filename": "uuf75-049.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0828,
+      "total_time_seconds": 0.0833,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.454937"
+    },
+    {
+      "seed": 29467555120602967745099089666890073746,
+      "filename": "uuf75-04.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0707,
+      "total_time_seconds": 0.0713,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.526395"
+    },
+    {
+      "seed": 98062567439750815260424074701564799191,
+      "filename": "uuf75-087.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0797,
+      "total_time_seconds": 0.0802,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.606810"
+    },
+    {
+      "seed": 70249420160122872667686235682381382468,
+      "filename": "uuf75-072.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0803,
+      "total_time_seconds": 0.0808,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.687792"
+    },
+    {
+      "seed": 24789753937415854389984523925828005704,
+      "filename": "uuf75-066.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0693,
+      "total_time_seconds": 0.0698,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.757820"
+    },
+    {
+      "seed": 104844378978484699625257962765017962499,
+      "filename": "uuf75-089.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0834,
+      "total_time_seconds": 0.0839,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.841931"
+    },
+    {
+      "seed": 109731794048482619932873497183475116999,
+      "filename": "uuf75-021.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0006,
+      "solve_time_seconds": 0.0628,
+      "total_time_seconds": 0.0634,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.905485"
+    },
+    {
+      "seed": 200789178877704258029849287311310251125,
+      "filename": "uuf75-085.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.0553,
+      "total_time_seconds": 0.0559,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:50.961517"
+    },
+    {
+      "seed": 37681733669796962023775763326760220455,
+      "filename": "uuf75-035.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.089,
+      "total_time_seconds": 0.0895,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:51.051214"
+    },
+    {
+      "seed": 319367693587851806100383011552574359397,
+      "filename": "uuf75-054.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1026,
+      "total_time_seconds": 0.1032,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:51.154552"
+    },
+    {
+      "seed": 74231219327585513437920425360840038880,
+      "filename": "uuf75-010.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1155,
+      "total_time_seconds": 0.116,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:51.270728"
+    },
+    {
+      "seed": 314726533319766201207906277331143893361,
+      "filename": "uuf75-075.cnf",
+      "variables": 75,
+      "clauses": 325,
+      "solution_found": false,
+      "load_time_seconds": 0.0005,
+      "solve_time_seconds": 0.1229,
+      "total_time_seconds": 0.1235,
+      "solver_params": {
+        "max_flips": 5000,
+        "max_restarts": 50,
+        "noise_prob": 0.57
+      },
+      "solver_stats": {
+        "solution_found": false,
+        "assignment": null,
+        "final_satisfied": 0
+      },
+      "timestamp": "2025-12-06T02:33:51.394377"
+    }
+  ],
+  "benchmark_config": {
+    "solver_parameters": {
+      "max_flips": 5000,
+      "max_restarts": 50,
+      "noise_prob": 0.57
+    },
+    "total_files_processed": 100,
+    "run_timestamp": "2025-12-06T02:33:51.394548"
+  }
+}

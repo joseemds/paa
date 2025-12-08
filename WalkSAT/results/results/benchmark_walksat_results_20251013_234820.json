@@ -1,0 +1,26 @@
+{
+  "summary": {
+    "total_instances": 0,
+    "solved_count": 0,
+    "unsolved_count": 0,
+    "success_rate": 0,
+    "avg_solve_time_solved": 0,
+    "median_solve_time_solved": 0,
+    "avg_flips_solved": 0,
+    "avg_restarts_solved": 0,
+    "avg_flips_per_second": 0,
+    "avg_final_satisfied_unsolved": 0
+  },
+  "individual_results": [],
+  "benchmark_config": {
+    "solver_parameters": {
+      "data_dir": "data/uf20-91",
+      "max_flips": 5000,
+      "max_restarts": 50,
+      "noise_prob": 0.57,
+      "seed": null
+    },
+    "total_files_processed": 0,
+    "run_timestamp": "2025-10-13T23:48:20.347586"
+  }
+}
